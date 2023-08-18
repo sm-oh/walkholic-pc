@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <!-- reset -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- Login -->
+  <link href="./css/login.css" rel="stylesheet" type="text/css">
+  <!-- 구글폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+  <!-- 제이쿼리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <!-- 스크립트 -->
+  
+
+</head>
+<body>
+  <form name="로그인" method="post" action="#">
+    <header>
+      <h1>
+        <a href="https://glocy.github.io/walkholic/index.html" title="메인페이지로 바로가기">
+          <img src="./images/logo_01.svg" alt="로고">
+        </a>
+      </h1>
+    </header>
+    
+    <main>
+      <input type="radio" id="tab01" name="m" checked>
+      <input type="radio" id="tab02" name="m">
+
+      <section class="login">
+        <h2>로그인</h2>
+        <label for="tab01" class="id">ID 로그인</label>     
+        <label for="tab02" class="qr">QR코드</label>
+      </section>
+
+
+      <fieldset>
+        <legend>로그인 폼</legend>
+        <div class="con01 on">
+          <p>
+            <label for="id_txt">아이디 : </label>
+            <input id="id_txt"  maxlength="16" type="text" placeholder="아이디" onfocus="this.placeholder=''" onblur="this.placeholder='아이디'">
+          </p>
+
+          <p>
+            <label for="pw_txt">패스워드 : </label>
+            <input id="pw_txt" maxlength="16" type="text" placeholder="비밀번호" onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호'">
+          </p>
+
+          <p class="auto_login">
+            <input type="checkbox" id="au">
+            <label for="au">&nbsp;자동로그인 &nbsp;</label>
+            <input type="checkbox" id="re">
+            <label for="re">&nbsp;아이디 기억하기</label>
+          </p>
+          
+          <div class="wrapper">
+            <a href="https://glocy.github.io/walkholic/index.html" title="login_btn" class="login_btn">로그인</a>
+          </div>
+        </div>
+
+        <div class="con02">
+          <img src="./images/QRCodeImg.jpg" alt="QR">
+            <div class="time">
+              <p>남은시간</p>
+              <p id="timer"></p>
+            </div>
+        </div>
+
+        <div class="b_group">
+          <ul>
+            <li><a href="#" title="아이디 찾기">아이디 찾기</a> </li>
+            <li><a href="#" title="비밀번호 찾기">비밀번호 찾기</a> </li>
+            <li><a href="#" title="회원가입">회원가입</a></li>
+          </ul>
+        </div>
+
+        <ul class="sns">
+          <li><a href="#" title="카카오톡 로그인"><img src="./images/kakao.png" alt=""><span>카카오톡 로그인</span></a></li>
+          <li><a href="#" title="네이버 로그인"><img src="./images/naver.png" alt=""><span>네이버 로그인</span></a></li>
+          <li><a href="#" title="구글 로그인"><img src="./images/google.png" alt=""><span>구글 로그인</span></a></li>
+        </ul>
+
+        <div id="banner"></div>
+
+        <footer>
+          <p>이용약관 &#124; <span>개인정보처리방침</span> &#124; 책임의 한계와 법적고지 &#124; 회원정보 고객센터</p>
+          <span class="sitename"><span class="walk">WALK </span>HOLiC</span> Copyright.WALK HOLiC Corp. ALL Right Reserved.
+        </footer>
+
+      </fieldset>
+      
+    </main>
+  </form>
+  <script src="./script/login.js"></script>
+</body>
+</html>

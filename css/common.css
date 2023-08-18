@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import url('normalize.css');
+@import url('reset.css');
+
+
+
+/* 폰트 */
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+@import url("https://cdn.jsdelivr.net/gh/glocy/files@ba2ce5a7d3aec835386e4430c7667cca36c10848/SBAggro.css");
+
+/* 변수 */
+/* :root{
+  --main-color : #86CEE0;
+  --sub-color1 : #9DB75A;
+  --sub-color2 : #E29D70;
+} */
+
+/* 공용 */
+html {
+  font-family: 'SB Aggro';
+  font-weight: 300;
+  background-image: url(../images/index-back2.jpg);
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {color: #333;}
+section {padding-top : 150px;}
+html {scroll-behavior: smooth;}
+body {position: relative;}
+button {border: none; background: none;}
+
+.hidden {display : none;}
+
+.d-flex {display : flex;}
+
+.jcsa {justify-content : space-around;}
+
+/* 버튼 서식 */
+.long_btn {
+  /* padding : 14px 40px; */
+  font-family: 'Pretendard Variable';
+  padding: 10px 20px;
+  border-radius : 20px;
+  background : #86CEE0;
+  box-sizing : border-box;
+  font-size: 13px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.long_btn:hover {
+  color:#86CEE0;
+  background : #fff;
+}
+.long_btn:active {
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.short_btn{
+  font-family: 'Pretendard Variable';
+  padding : 10px 15px;
+  border-radius: 20px;
+  background : #E29D70;
+  box-sizing : border-box;
+  font-size: 13px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.short_btn:hover {
+  color: #E29D70;
+  background: #fff;
+}
+.short_btn:active {
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+
